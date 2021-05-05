@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+:root {
+    --Bright_orange: hsl(31, 77%, 52%);
+    --dark_cyan: hsl(184, 100%, 22%);
+    --very_dark_cyan: hsl(179, 100%, 13%);
+    /* background background, headings, buttons*/
+    --very_light_grey: hsl(0, 0%, 95%);
+    /* paragraphs*/
+    --Transparent_white: hsla(0, 0%, 100%, 0.75);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+    background-color: var(--very_light_grey);
+}
+
+.wrapper {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: var(--Transparent_white);
+    font-size: 15px;
+    line-height: 1.7;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+h2 {
+    color: var(--very_light_grey);
+}
+
+button {
+    background-color: white;
+    padding: 15px 40px;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: "Lexend Deca", sans-serif;
+    border-radius: 40px;
+    margin: 50px auto 0px;
+    border: transparent solid 2px;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    min-height: 500px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.container>* {
+    flex: 1 1 33%;
+    padding: 60px;
+}
+
+.container h1 {
+    font-family: "Big Shoulders Display";
+    color: var(--very_light_grey);
+    font-size: 40px;
+}
+
+.suvs {
+    background-color: var(--dark_cyan);
+}
+
+.luxury {
+    border-radius: 0px 20px 20px 0px;
+    background-color: var(--very_dark_cyan);
+}
+
+.sedan {
+    border-radius: 20px 0px 0px 20px;
+    background-color: var(--Bright_orange);
+}
+
+.suvs>button {
+    color: var(--dark_cyan);
+}
+
+.luxury>button {
+    color: var(--very_dark_cyan);
+}
+
+.sedan>button {
+    color: var(--Bright_orange);
+}
+
+.suvs>button:hover {
+    background-color: var(--dark_cyan);
+    color: var(--very_light_grey);
+    border: var(--very_light_grey) solid 2px;
+    cursor: pointer;
+}
+
+.luxury>button:hover {
+    background-color: var(--very_dark_cyan);
+    color: var(--very_light_grey);
+    border: var(--very_light_grey) solid 2px;
+    cursor: pointer;
+}
+
+.sedan>button:hover {
+    background-color: var(--Bright_orange);
+    color: var(--very_light_grey);
+    border: var(--very_light_grey) solid 2px;
+    cursor: pointer;
+}
+
+.attribution {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--dark_cyan);
+    text-decoration: none;
+}
+
+@media (max-width: 920px) {
+    html {
+        height: unset;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .sedan {
+        border-radius: 20px 20px 0px 0px;
+    }
+    .luxury {
+        border-radius: 0px 0px 20px 20px;
+    }
+}
