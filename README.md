@@ -25,3 +25,5 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 
 
 ##Preview
+
+https://bswalid.github.io/FrontendMentor-challenge-3-colums-responsive/
